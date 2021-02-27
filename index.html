@@ -11,16 +11,25 @@
 </head>
 
 <body>
-  <h1>ErgoMod Workspaces</h1>
+  
+  <div class="container">
+  
+  <header class="primary"> <!-- primary header divider -->
+    
+    <h1>ErgoMod Workspaces</h1>
+  
+ </header>
+ 
+ <section id="content"> <!--  content divider -->
 
-<h2>About ErgoMod</h2>
+<h2 id="about">About ErgoMod</h2> <!-- (Primary Content Heading) -->
 
 <p>ErgoMod Workspaces is one of the first to offer an ergonomic modern standing workspace. <strong>Let us make your workspace aesthetic and ergonomic with a modern setup.</strong> You tell us what you desire to have and we will assemble and deliver to the specified site.
 
 We come out and consult with you about your needs and we can develop a plan of action that can fit your needs.We have vendors that we can order standing desks, ergonomic chairs and other workspaces accessories. We can also make custom wooden desktops with standing desk frames upon request along with cable management options as well.</p>
 
 
-<h2>ErgoMod Mission</h2>
+<h2 id="mission">ErgoMod Mission</h2>
 
 <blockquote><p>Our mission is to provide a workspace whether in the office or working home remotely a comfortable workspace that will provide more productivity and less body strain from sitting in a chair for long periods of time. With cable management the workspace can have the most aesthetic look possible.</p></blockquote>
 
@@ -37,7 +46,39 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
 <p>Pricing is based on vendors and is subject to change. Once we come onsite and consult with clients we can come with a complete total of total project cost. We will list some of the price of the desks from our vendor. Keep in mind that labor fees are not included but will be once the project is planned and discussed and all fees will be included.</p>
 
 
-
+<form method="post" action="Processing-script.php">
+  
+    <feildset>
+      
+        <legend>Service request</legend>
+        
+        <label for="businessname">Business name</label><input type="text" id="businessname" name="businessname" /> <!-- this label asks for business name in textbox -->
+        
+        <lablel for="address">Address</lablel><textarea id="address" name="address"></textarea> <!-- this label asks for business address in textbox -->
+        
+        <label for"servicerequesting">Service Requesting</label> <!-- this label asks for Request needs in dropdown list -->
+        
+        <select id="service" name"service"> <!-- this dropdown has selections for different services -->
+        
+        <!-- CREATES DROPDOWN LIST INSIDE OF FORM -->
+        
+        <option value="desk">Standing Desk</option>
+        <option value="accesories">Accesories</option>
+        <option value="cable">Cable Management</option>
+        <option value="custom">Custom Application</option>
+        <option value="null">Select Service</option>
+          
+            
+          
+        </select> <!-- closes dropdown box  -->
+      
+      
+      <input type="submit" value="Contact Me About Service" /> <!-- CREATES Submit Button -->
+      
+    </feildset><!-- closes fileds inside form -->
+  
+  
+</form> <!-- closes from -->
 
 
 
@@ -164,6 +205,8 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
   
   <dd>Utlra Wide Monitors</dd>
   
+  <img src="ifsc-1310/Prototype/assets/img/samsung.jfif" alt="widescreen pic" />
+  
   <dd>Monitor Arm</dd>
   
   <dd>Cable Tray</dd>
@@ -171,14 +214,19 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
   <dd>Filing Cabinet</dd>
 </dl>
 
-
+</section> <!-- content closing tag -->
 
   
-     <nav>
+     <nav=class"primary">
          <ul>
-             <li><a href="prototype/index.html"> Home </a></li>
-         </ul>
+            <li><a href="prototype/index.html"> Home </a></li> <!-- Home page link -->
+            <li><a href="#about">About</a></li> <!-- About Section link -->
+            <li><a href="#mission">Mission</a></li> <!-- About Section link -->
+          </ul>
      </nav> 
+     
+     
+     </div> <!-- container -->
 </body>
 </html>
 
