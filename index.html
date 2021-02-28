@@ -12,13 +12,13 @@
 
 <body>
   
-  <div class="container">
+  <div class="container"> <!-- div opening tag -->
   
   <header class="primary"> <!-- primary header divider -->
     
     <h1>ErgoMod Workspaces</h1>
   
- </header>
+ </header><!-- div header closeing tag -->
  
  <section id="content"> <!--  content divider -->
 
@@ -31,7 +31,7 @@ We come out and consult with you about your needs and we can develop a plan of a
 
 <h2 id="mission">ErgoMod Mission</h2>
 
-<blockquote><p>Our mission is to provide a workspace whether in the office or working home remotely a comfortable workspace that will provide more productivity and less body strain from sitting in a chair for long periods of time. With cable management the workspace can have the most aesthetic look possible.</p></blockquote>
+<blockquote><cite>Our mission is to provide a workspace whether in the office or working home remotely a comfortable workspace that will provide more productivity and less body strain from sitting in a chair for long periods of time. With cable management the workspace can have the most aesthetic look possible.</cite><cite>From CEO Gray</cite></blockquote>
 
 
 <h2>ErgoMod Accessories</h2>
@@ -45,23 +45,24 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
 
 <p>Pricing is based on vendors and is subject to change. Once we come onsite and consult with clients we can come with a complete total of total project cost. We will list some of the price of the desks from our vendor. Keep in mind that labor fees are not included but will be once the project is planned and discussed and all fees will be included.</p>
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd6BUE7PX-6bwnFltVo-YV65vU5I5rwgYBAA&usqp=CAU" alt="standing desk pic"/> 
 
 <form method="post" action="Processing-script.php">
   
-    <feildset>
+    <fieldset>
       
         <legend>Service request</legend>
         
         <label for="businessname">Business name</label><input type="text" id="businessname" name="businessname" /> <!-- this label asks for business name in textbox -->
         
-        <lablel for="address">Address</lablel><textarea id="address" name="address"></textarea> <!-- this label asks for business address in textbox -->
+        <label for="address">Address</label><textarea id="address" name="address"></textarea> <!-- this label asks for business address in textbox -->
         
-        <label for"servicerequesting">Service Requesting</label> <!-- this label asks for Request needs in dropdown list -->
+        <label for="service">Service </label> <!-- this label asks for Request needs in dropdown list -->
         
-        <select id="service" name"service"> <!-- this dropdown has selections for different services -->
+        <label for="service">Please Select Option</label> <!-- this dropdown has selections for different services -->
         
         <!-- CREATES DROPDOWN LIST INSIDE OF FORM -->
-        
+        <select id="service" name="service" >
         <option value="desk">Standing Desk</option>
         <option value="accesories">Accesories</option>
         <option value="cable">Cable Management</option>
@@ -75,7 +76,7 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
       
       <input type="submit" value="Contact Me About Service" /> <!-- CREATES Submit Button -->
       
-    </feildset><!-- closes fileds inside form -->
+    </fieldset><!-- closes fileds inside form -->
   
   
 </form> <!-- closes from -->
@@ -84,7 +85,7 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
 
 
 
-<table border="1">
+<table border="1"> <!-- Desk Table -->
     <caption><h3>Desks</h3> </caption>
     <tr>
         <th scope="col">Desk Type</th>
@@ -113,7 +114,7 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
        </tr>
 </table>
 
-<table border="1">
+<table border="1"> <!-- Chairs Table -->
   
       <caption><h3>Chairs</h3></caption>
 
@@ -154,7 +155,7 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
 </table>
 
 
-<table border="1">
+<table border="1"> <!-- Accessories Table -->
 
 <caption><h3>Accessories</h3></caption>
 
@@ -186,47 +187,64 @@ Another set of accessories is Desk lamps, leather desk pads, and footrest and st
   </tr>
 
 
-</table>
+</table><!-- table closing tag -->
 
-<ol>
-  <caption>Standing Desk Options</caption>
+<ol> <!-- Ordered list -->
+  <li>Standing Desk Options</li>
   
   <li><h4>Color</h4></li>
-  
+  </ol><!-- ordered List closing tag -->
   <ul>
     <li>White Frame</li>
     <li>Black Frame</li>
-  </ul>
+  </ul><!-- unordered List closing tag -->
   
-</ol>
-
 <dl>
   <dt>Accesories</dt>
   
-  <dd>Utlra Wide Monitors</dd>
+  <dt>Utlra Wide Monitors</dt>
   
-  <img src="ifsc-1310/Prototype/assets/img/samsung.jfif" alt="widescreen pic" />
+    <dd>Samsung</dd>
+    <dd>Sony</dd>
+    <dd>LG</dd>
   
-  <dd>Monitor Arm</dd>
+  <dt>Monitor Arm</dt>
   
-  <dd>Cable Tray</dd>
+      <dd>fixed</dd>
+      <dd>Piston</dd>
+      <dd>fully adjustable</dd>
+
+  <dt>Cable Tray</dt>
   
-  <dd>Filing Cabinet</dd>
-</dl>
+      <dd>Under desk</dd>
+      <dd>Wire management</dd>
+      <dd>Power Strips</dd>
+  
+  <dt>Filing Cabinet</dt>
+    
+      <dd>Wood</dd>
+      <dd>Metal</dd>
+      <dd>Plastic</dd>
+    </dl>
 
 </section> <!-- content closing tag -->
 
   
-     <nav=class"primary">
+     <nav class="primary">
          <ul>
             <li><a href="prototype/index.html"> Home </a></li> <!-- Home page link -->
             <li><a href="#about">About</a></li> <!-- About Section link -->
+            <li><a href="https://ualr.edu/" target="blank">UALR</a></li> <!-- UALR Section link -->
+            <li><a href="mailto:mgray2@ualr.edu" target="blank">Contacts</a></li><!-- Contacts Section link -->
             <li><a href="#mission">Mission</a></li> <!-- About Section link -->
           </ul>
      </nav> 
      
+     <footer class="primary"> <h6>&copy; <em>2021 Michael Gray</em> | <a href="#top">Back to Top</a></h6>
+     
+     </footer><!-- closing footer tag -->
      
      </div> <!-- container -->
-</body>
-</html>
+</body><!-- closing Body tag -->
+</html><!-- closing HTML tag -->
 
