@@ -1,5 +1,74 @@
 /*====homepage CSS ======*/
 
 body{
-    background-color:silver;
+    background-color:#2C3F59;
+}
+
+
+/*====Box sizing ======*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* ---------------Utility Classes----------------- */
+
+
+
+
+
+
+
+/* ---------------Global Styles----------------- */
+
+body {
+    margin:0;
+    fontfamily: 'Playfair Display', serif;
+}
+
+header.primary{
+    backround-color:#ffffff;
+    text-align: center;
+    color:#585859;
+    padding:40px 40px 20px 40px;
+    
+}
+
+header.primary h1{
+    color:#585859;
+    font-size: 3.3rem;
+    text-decoration: none;
+}
+
+header.primary nav{
+    width: 70vw;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+header.primary nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding:0;
+}
+
+header.primary nav ul li{
+    list-style-type: none;
+}
+
+header.primary nav a:link, header.primary nav a:visited{
+    color:#585859;
+    text-decoration:none;
+    background-color:#000;
+    background-color:rgba(0,0,0,.4);
+    padding:8px 16px;
+    border-radius: 20px;
+    transition:.5s;
 }
