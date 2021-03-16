@@ -1,4 +1,4 @@
-/*====css demo Stylesheet ======*/
+/*====css demo assignment Stylesheet ======*/
 
 /*====Box Sizing ======*/
 
@@ -11,23 +11,44 @@ html {
   box-sizing: inherit;
 }
 
-/*==== Global Styles ======*/
+/*--------------Responsive Images-----------------*/
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/*------------------Utility Class class="container"--------------*/
+
+.container{
+  width:70vw;
+  margin:40px;
+}
+
+.img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+
+/*==== Global Styles <body> ======*/
 
 
 body {
-    margin:0;
-    font-family: 'Nunito', sans-serif;
+  margin:0;
+  font-family: 'Nunito', sans-serif;
 }
 
-/*==== Utility Styles | makes container classes consitent throughout page ======*/
-
-.container{
-  width:80vw;
-  margin: 40px auto;
-  
-}
-
-/*==== header element with a class of primary ======*/
+/*====<header class= "primary"> styles ======*/
 
 header.primary{
     background-color:#126CFF;
@@ -97,6 +118,218 @@ header.primary nav a:hover,header.primary nav a:active{
   background-color: rgba(0,0,0,.8);
 }
 
+/*---tag <Section id="intro"> Styles----------*/
+
+#intro{
+  border: 1px solid #c0c0c0;
+  padding-bottom:1.5rem;
+}
+
+#intro h2{
+    color:#3b638b;
+}
+
+#intro p{
+    line-height:1.5;
+}
+
+/*----<section id="content">  Styles*/
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  /* Shorthand */
+  flex-flow: row space-between;
+  border-bottom: 1px dotted #c0c0c0;
+  padding-bottom:2.6rem;
+}
+
+#content article.post{
+    width:30%;
+    box-shadow:0 4px 8px rgba(0,0,0,.4);
+    padding:.7em;
+    border-radius:10px;
+    font-size:.9rem;
+    transition:.5s;
+}
+
+#content article.post:hover{
+    box-shadow:0 4px 8px rgba(0,0,0,.4);
+}
+
+#content .post figure{
+    margin:0;
+}
+
+#content article img{
+  border-radius: 4px;
+
+}
+
+#content article a:link, #content article a:visited{
+  color: #3b638b;
+}
+
+#content article a:hover, #content article a:active{
+  text-decoration: none;
+}
+
+/*Tag and Attribute Selectors Styles | <aside >  */
+
+aside[role="complementary"]{
+ background-color:#172635; 
+ color:#fff;
+ padding:2.2rem;
+}
+
+aside .container{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+aside article.widget{
+  width:40%;
+}
+
+aside a:link, aside a:visited{
+  color:white;
+  display:block;
+  margin-top:20px;
+}
+
+aside footer{
+  display:none;
+}
+
+#colophon {
+  background-color: #3b638b;
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#fff;
+  text-align: center;
+  font-size:.8rem;
+  text-transform:uppercase;
+}
+
+
+#additional-elements h2{
+  color:#3b638b;
+  border-bottom:1px dotted #c0c0c0;
+  
+}
+
+
+#additional-elements a:link, #additional-elements a:visited
+{
+  color:#3b638b;
+ 
+}
+#additional-elements a:hover, #additional-elements a:active{
+  text-decoration:none;
+}
+
+
+
+#additional-elements h3{
+  clear:both;
+  border-left:5px solid #3b638b;
+  padding-left:10px;
+}
+
+
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+table td{
+  border:1px solid #c0c0c0;
+  paddding:5px;
+}
+
+table th{
+  background-color:#c0c0c0;
+  color:#fff;
+  width:33%;
+  padding:10px;
+}
+
+table tr:nth-child(even){
+  background-color: rgba(0,0,0,.1);
+  
+}
+
+table tR:hover{
+  background-color:rgba(0,0,0,.2);
+}
+
+table caption{
+  color: #36b38b;
+  padding:10px;
+  font-size:1.4rem;
+  font-weight: bold;
+}
+
+#additional-elements ul{
+  list-style: square;
+}
+
+#additional-elements ol{
+  list-style: upper-roman;
+}
+
+#additional-elements ul ul li{
+  color:red;
+}
+
+
+#additional-elements dl {
+  
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:1.2rem;
+  margin-top: 20px;
+}
+  
+#additional-elements dd{
+  margin:0;
+}
+
+/*Adjacent Sibling Selector  */
+
+dd + dt {
+  margin-top:20px;
+}
+
+
+blockquote{
+ background: rgba(0,0,0,.15);
+  padding:40px 60px;
+  border:5px double #c0c0c0;
+  border-radius:16px;
+  font-size:1.2em;
+}
+
+blockquote cite{
+ display:block;
+ font-size:.6rem;
+ font-weight:bold;
+ text-align:right;
+ margin-top: 1.5rem;
+  
+}
+
+
+
 
 /* media query exmple */
 @media screen and  (max-width:690px){
@@ -121,8 +354,4 @@ header.primary nav li{
   
 }
 
-#intro{
-  border: 1px solid #c0c0c0;
-  pading-bottom:1.5rem;
-}
 

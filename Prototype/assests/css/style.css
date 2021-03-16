@@ -1,8 +1,27 @@
-/*====homepage CSS ======*/
+/*====Prototype CSS Style Page ======*/
 
-body{
-    background-color:blue;
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 
 
+
+/*Global Styles*/
+body{
+    background-color:#9999AD;
+    margin:0;
+    line-height: 1.5;
+}
+
+
+
+
+/*header Styles*/

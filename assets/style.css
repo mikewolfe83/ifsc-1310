@@ -1,7 +1,7 @@
-/*====homepage CSS ======*/
+/*====this is for homepage index CSS ======*/
 
 body{
-    background-color:#2C3F59;
+    background-color:#000000;
 }
 
 
@@ -9,6 +9,7 @@ body{
 
 html {
     box-sizing: border-box;
+    
 }
 
 *,
@@ -22,7 +23,14 @@ html {
 
 
 
+/* ---------------img----------------- */
 
+#ric{
+    max-width: 100%;
+    height:auto;
+    
+    
+}
 
 
 /* ---------------Global Styles----------------- */
@@ -35,13 +43,13 @@ body {
 header.primary{
     backround-color:#ffffff;
     text-align: center;
-    color:#585859;
+    color:#383530;
     padding:40px 40px 20px 40px;
     
 }
 
 header.primary h1{
-    color:#585859;
+    color:#ffffff;
     font-size: 3.3rem;
     text-decoration: none;
 }
@@ -52,23 +60,67 @@ header.primary nav{
     max-width: 900px;
 }
 
-header.primary nav ul{
+header.primary nav ul{ /* unordred list buttons*/
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
     padding:0;
 }
 
+nav.flexpic{
+    
+    display: flex;
+    justify-content:center;
+    
+}
+
 header.primary nav ul li{
+
     list-style-type: none;
+    margin-bottom: 40px;
 }
 
 header.primary nav a:link, header.primary nav a:visited{
-    color:#585859;
+    color:#ffffff;
     text-decoration:none;
     background-color:#000;
     background-color:rgba(0,0,0,.4);
     padding:8px 16px;
+    border:2px solid #383530;
     border-radius: 20px;
     transition:.5s;
 }
+
+header.primary nav a:hover, header.primary 
+nav a:active{
+     background-color: #383530;
+}
+
+
+
+
+
+
+@media screen and (max-width:690px){
+    header.primary nav ul{
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin:0 auto;
+    }
+    
+    header.primary nav a{
+        display: block;
+    }
+    
+    header,primary nav li{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
