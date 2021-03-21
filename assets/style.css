@@ -75,6 +75,12 @@ nav.flexpic{
     
 }
 
+#labs{   /*  home list title     */
+   list-style-type: none;
+   color:#ffffff;
+   margin-bottom: 40px;
+}
+
 header.primary nav ul li{
 
     list-style-type: none;
