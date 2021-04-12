@@ -16,8 +16,9 @@ html{
 
 /*Global Styles*/
 body{
-    background-color:#9999AD;
+    background-color:#171E26;
     margin:0;
+    font-family: 'Londrina Solid', cursive;
     line-height: 1.5;
 }
 
@@ -25,3 +26,43 @@ body{
 
 
 /*header Styles*/
+
+header.primary{
+    background-color:#82A8D9;
+    color:white;
+    border:3px solid #000;
+    padding:20px;
+    
+    
+    
+}
+
+h2.two{
+    background-color:#82A8D9;
+}
+
+h2.three{
+    background-color:#82A8D9;
+}
+
+
+
+/* paragraph styles  */
+
+p.one{
+    background-color:#82A8D9;
+}
+
+
+p.two{
+    background-color:#264773;
+}
+
+
+p.three{
+    background-color:#72A9F2;
+}
+
+blockquote.four{
+    background-color: #72A9F2;
+}
