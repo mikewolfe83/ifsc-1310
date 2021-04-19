@@ -21,23 +21,13 @@ body{
 
 /*------------------Utility Class class="container"--------------*/
 
-.container{
-  width:100vw;
-  margin:40px;
-}
 
-.img-right{
-  float:right;
-  margin: 10px 0 10px 20px;
-  border:1px solid #c0c0c0;
-  padding:5px;
-}
 
-.img-left{
-  float:left;
-  margin: 10px 20px 10px 0px;
-  border:1px solid #c0c0c0;
-  padding:5px;
+.img-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
@@ -112,8 +102,13 @@ header.primary ul a{
 
 #intro{
     
-      
-   padding-bottom:1.5rem;
+   background-color:#000;
+   height: 100%;
+   display:flex;
+   height:auto;
+   border-bottom: 1px ;
+   padding-bottom:2.6rem;
+   
   
   
 }
@@ -124,7 +119,9 @@ header.primary ul a{
 }
 
 #intro p{
+
     line-height:1.5;
+    text-align: center;
     
     
     
@@ -144,7 +141,7 @@ body {
 
 
 #content{
-background-image: url(../images/diag_1.jpg);
+  background-color: #3D3D3D;
   display:flex;
   flex-direction:row;
   justify-content:space-between;    
@@ -154,6 +151,7 @@ background-image: url(../images/diag_1.jpg);
 }
 
 #content article.post{
+    background-color: #3D3D3D;
     width:30%;
     box-shadow:0 4px 8px rgba(0,0,0,.4);
     padding:.7em;
