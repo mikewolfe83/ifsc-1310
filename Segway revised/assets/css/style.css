@@ -1,0 +1,263 @@
+/* Segway revised CSS */
+
+/*     
+#00000 - Black text
+
+
+
+
+
+*/
+
+/*   BOX SIZING */
+
+html{
+    box-sizing:border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*--------Global Styles-----------*/
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Orelega One', cursive;
+    line-height:2.0;
+    color:#7A6617;
+    
+}
+
+/*------------------Utility Class class="container"--------------*/
+
+.img-center{
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+  border-radius:8px;
+  float: right;
+  margin-right:100px;
+  }
+
+
+
+  
+  .img-container{
+  float: right;
+  width: 33.33%;
+  padding: 10px;
+  
+  }
+  
+  .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+
+/*--------Responsive images-----------*/
+
+
+img{
+    max-width:100%;
+    height:auto;
+  }
+
+/*--------header design styles-----------*/
+
+
+header.primary{
+    
+    text-align: center;
+    background-position: 50px 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 40px 40px;
+    
+ 
+}  
+
+header.primary::before {
+    content: "";
+    background-image: url(../images/tech_3.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .8;
+  }
+
+header.primary h1{
+    position: relative;
+    margin: 20px 0;
+    
+    font-size:3.2rem;
+    Top:355px;
+    
+   
+}
+
+header.primary h1 a {
+    color:#000;
+    display: block;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-decoration:none;
+    
+    border-color: #7A6617;
+     padding: 8px 16px;
+    width: 50%;
+  }
+
+
+
+header.primary nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+    top:350px;
+}
+
+header.primary ul li{
+    display:inline;
+    font-size: 1rem;
+    
+    
+}
+
+header.primary nav li {
+    list-style-type: none;
+    padding: 8px 16px;
+    width: 20%;
+    
+  }
+
+  header.primary nav a:link,
+  header.primary nav a:visited,
+  header.primary h1 a:link,
+  header.primary h1 a:visited{
+    color:#ffff;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: #000;
+    padding: 8px 8px;
+    border-radius: 10px;
+    transition: 0.6s;
+    display: block;
+  }
+
+  header.primary nav a:hover,
+  header.primary nav a:active,
+  header.primary h1 a:hover,
+  header.primary h1 a:active{
+    background-color: #7A6617;
+  }
+  
+ /* ------------- Section --------------- */
+
+section {
+    margin:0;
+    padding: 0;
+    background:#212424;
+    height: 100%;
+    padding: 20px 40px;
+   
+ }
+ 
+ 
+  #content1 p{
+     border-style: double;
+     color:#7A6617;
+     padding: 8px 16px;
+     
+ }
+ 
+  section.container li {
+     border-style: double;
+     color:#7A6617;
+     padding: 8px 16px;
+     
+ }
+ 
+  #content3 li {
+     border-style: double;
+     color:#7A6617;
+     padding: 8px 16px;
+     
+ }
+ 
+ section h2 {
+     text-align: center;
+     
+ }
+ 
+ 
+ 
+ 
+ section ul li{
+     list-style: none;
+ }
+
+
+/*---- Blockquote -----*/
+
+blockquote p{
+    text-align: center;
+    font-size:4rem;
+}
+
+blockquote ::before {
+    content: "";
+    background-image: url(../images/white_img.png);
+    
+    height:40vh;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    opacity: .4
+    
+    
+}
+
+
+  
+/*---- footer -----*/
+
+footer{
+    background:#212424;
+    text-align: center;
+    border-radius: 5px;
+    font-size:2rem;
+    padding:10px 20px;
+    background-size: contain;
+    
+} 
+
+footer a{
+    color:#7A6617;
+}
+
+footer a:hover,
+footer a:hover{
+    color:#000;
+}
+
+#wufoo-z18iy62a00se9ir{
+    background-color: #ffff;
+}
+
+ #techs {
+text-align: center;
+}
